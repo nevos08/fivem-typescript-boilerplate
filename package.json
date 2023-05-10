@@ -1,0 +1,24 @@
+{
+    "name": "fivem-typescript-boilerplate",
+    "version": "1.0.0",
+    "author": "Le0n",
+    "license": "MIT",
+    "type": "module",
+    "devDependencies": {
+        "@citizenfx/client": "2.0.6405-1",
+        "@citizenfx/server": "2.0.6405-1",
+        "@types/node": "^18.16.0",
+        "concurrently": "^8.0.1",
+        "esbuild": "^0.17.18",
+        "typescript": "^5.0.4"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "bracketSameLine": false,
+        "arrowParens": "always",
+        "printWidth": 100
+    }
+}
