@@ -4,6 +4,20 @@
     "author": "Le0n",
     "license": "MIT",
     "type": "module",
+    "scripts": {
+        "-----BUILD-----": "",
+        "build": "concurrently \"yarn:build:*\"",
+        "build:client": "node --es-module-specifier-resolution=node scripts/client",
+        "build:server": "node --es-module-specifier-resolution=node scripts/server",
+        "-----DEV-----": "",
+        "dev": "concurrently \"yarn:dev:client\" \"yarn:dev:server\" \"yarn:tsc\" -c \"green.bold,cyan.bold\"",
+        "dev:client": "node --es-module-specifier-resolution=node scripts/client -dev",
+        "dev:server": "node --es-module-specifier-resolution=node scripts/server -dev",
+        "-----TSC-----": "",
+        "tsc": "concurrently \"yarn:tsc:*\" -c \"green.bold,cyan.bold\"",
+        "tsc:client": "cd src/client && npx tsc -w",
+        "tsc:server": "cd src/server && npx tsc -w"
+    },
     "devDependencies": {
         "@citizenfx/client": "2.0.6405-1",
         "@citizenfx/server": "2.0.6405-1",
