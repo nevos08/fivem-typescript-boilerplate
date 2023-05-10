@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "@client/*": ["client/*"],
+            "@server/*": ["server/*"],
+            "@shared/*": ["shared/*"],
+            "@web/*": ["web/src/*"]
+        },
+        "module": "ESNext",
+        "target": "ESNext",
+        "allowJs": true,
+        "strict": false,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": false,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "noEmit": true,
+        "preserveWatchOutput": true
+    },
+    "exclude": ["node_modules"]
+}
