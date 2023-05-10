@@ -7,7 +7,7 @@ export const build = async (esbuildOptions) => {
         format: 'esm',
         target: 'esnext',
         logLevel: 'info',
-        sourcemap: dev ? 'both' : false,
+        sourcemap: false,
         minify: !dev,
         keepNames: !dev,
         define: {
